@@ -45,4 +45,14 @@ public class BinarySearchTest {
     assertThat(index)
         .isEqualTo(2);
   }
+
+  @Test
+  void searchingForKeyThatIsMidpointOfLowerHalfOfArrayLengthThreeIsZero() {
+    BinarySearch binarySearch = new BinarySearch();
+
+    int index = binarySearch.findIndexOf(1, new int[]{1, 2, 3});
+
+    assertThat(index)
+        .isZero();
+  }
 }
