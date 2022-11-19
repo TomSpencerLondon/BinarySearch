@@ -1,10 +1,28 @@
 package com.tomspencerlondon;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 import org.junit.jupiter.api.Test;
 
 public class BinarySearchTest {
 
   @Test
-  void name() {
+  void whenSearchForKeyNotInArryIsMinusOne() {
+    BinarySearch binarySearch = new BinarySearch();
+
+    int index = binarySearch.findIndexOf(1, new int[]{0});
+
+    assertThat(index)
+        .isEqualTo(-1);
+  }
+
+  @Test
+  void searchingForKeyPresentInArrayLengthOneIsOne() {
+    BinarySearch binarySearch = new BinarySearch();
+
+    int index = binarySearch.findIndexOf(1, new int[]{1});
+
+    assertThat(index)
+        .isZero();
   }
 }
