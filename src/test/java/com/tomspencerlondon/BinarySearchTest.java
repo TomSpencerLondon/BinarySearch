@@ -35,4 +35,14 @@ public class BinarySearchTest {
     assertThat(index)
         .isOne();
   }
+
+  @Test
+  void searchingForKeyThatIsMidpointOfUpperHalfOfArrayLengthThreeIsTwo() {
+    BinarySearch binarySearch = new BinarySearch();
+
+    int index = binarySearch.findIndexOf(3, new int[]{1, 2, 3});
+
+    assertThat(index)
+        .isEqualTo(2);
+  }
 }
