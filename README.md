@@ -13,7 +13,7 @@ Find the index of a given number in an array of numbers if it is present.
 - If the key is equal to the midpoint index number then return midpoint
 - If the key is larger than the midpoint index number then set low to midpoint plus one
 - If the key is less than the midpoint index number then set high to midpoint index minus one
-   
+
 #### Recursive version
 1. Create binarySearch method that takes target and numbers
 2. Create binaryHelper method that takes target, numbers, low, high

@@ -20,6 +20,7 @@ public class BinarySearch {
       if (key < numbers[midpoint]) {
         return binaryHelper(key, numbers, low, midpoint - 1);
       }
+
       return binaryHelper(key, numbers, midpoint + 1, high);
     }
 
